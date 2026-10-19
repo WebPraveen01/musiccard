@@ -95,8 +95,8 @@ button {
   font-weight: bold;
 }
 .cancel-order a {
-  color: #7280a7;
-  transition: color 0.3s ease;
+color: #7280a7;
+transition: color 0.3s ease;
 }
 
 .proceed-btn{
@@ -129,10 +129,9 @@ button {
   color: rgb(114, 128, 167);
   text-decoration: none;
 }
-.cancel-order:hover a {
-  color: rgb(31, 47, 86);
+.cancel-order a:hover {
+color: #3829e0;
 }
-
 
 /* Proceed to Payment hover */
 .proceed-btn {
