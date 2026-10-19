@@ -129,9 +129,8 @@ button {
   color: rgb(114, 128, 167);
   text-decoration: none;
 }
-.cancel-order:hover,
 .cancel-order:hover a {
-  color: rgb(31, 47, 86) !important;
+  color: rgb(31, 47, 86);
 }
 
 
