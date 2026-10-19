@@ -1,0 +1,192 @@
+
+/* Reset default browser spacing */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global page styles */
+body {
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #e0e8ff;
+  color: #1f2f56;
+  background-image: url("/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100% auto;
+}
+
+/* Remove default link underline */
+a {
+  text-decoration: none;
+}
+
+/* Make form controls use the page font */
+button {
+  font-family: inherit;
+}
+
+
+.main{
+  min-height: 100vh;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items: center;
+  padding: 30px 16px;
+}
+.container{
+  width: 100%;
+  max-width: 400px;
+  background-color: #fff;
+  border-radius: 18px;
+  overflow: hidden;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(31, 47, 86, 0.12);
+  padding-bottom: 30px;
+}
+.hero-image{
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.heading{
+  color: #1f2f56;
+  font-size: 26px;
+  padding:30px 20px 15px;
+}
+.summary-para{
+  color: #7280a7;
+  font-size: 15px;
+  line-height: 1.7;
+  margin:0 30px 25px;
+
+}
+.plain-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap:12px;
+  margin: 0 25px 28px;
+  padding: 16px;
+  background-color: #f7f9ff;
+  border-radius: 12px;
+}
+.plan-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  font-size: 16px;
+  font-weight: bold;
+}
+.plan-text h3{
+  color: #1f2f56;
+  font-size: 16px;
+}
+.plan-text span {
+  color: #7280a7;
+}
+.change-link a{
+  color: #3829e0;
+  font-size: 14px;
+  font-weight: bold;
+}
+.cancel-order a {
+  color: #7280a7;
+  transition: color 0.3s ease;
+}
+
+.proceed-btn{
+  display: block;
+  width: calc(100% - 50px);
+  margin: 0 auto 25px;
+  padding: 15px;
+  border:none;
+  padding: 15px;
+  border:none;
+  border-radius: 10px;
+  background-color:#3829e0;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 10px 20px rgba(56, 41, 224, 0.2);
+}
+.attribution{
+  margin-top: 25px;
+  font-size: 12px;
+  text-align: center;
+}
+.attribution a{
+  color: #3829e0;
+}
+
+/* Change link hover */
+.change-link a:hover {
+  color: rgb(114, 128, 167);
+  text-decoration: none;
+}
+.cancel-order:hover,
+.cancel-order:hover a {
+  color: rgb(31, 47, 86) !important;
+}
+
+
+/* Proceed to Payment hover */
+.proceed-btn {
+  transition: background-color 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background-color: rgb(40, 30, 180) !important;
+}
+
+/* Keyboard focus states */
+.change-link a:focus-visible,
+.proceed-btn:focus-visible,
+.cancel-order:focus-visible {
+  outline: 3px solid #ffbf47;
+  outline-offset: 4px;
+}
+
+@media (max-width: 450px) {
+  body {
+    background-image: url("/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100% auto;
+  }
+  .main{
+    padding: 24px 16px;
+  }
+  .container{
+    width: 100%;
+    max-width: 350px;
+  }
+  .heading{
+    font-size: 23px;
+    margin-top: 26px;
+  }
+  .summary-para {
+    margin-left: 24px;
+    margin-right: 24px;
+    font-size: 14px;
+  }
+
+  .plan-section {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 14px;
+  }
+
+  .proceed-btn {
+    width: calc(100% - 40px);
+  }
+
+  .attribution {
+    line-height: 1.8;
+  }
+}
