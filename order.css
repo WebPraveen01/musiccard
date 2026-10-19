@@ -129,8 +129,9 @@ transition: color 0.3s ease;
   color: rgb(114, 128, 167);
   text-decoration: none;
 }
-.cancel-order a:hover {
-color: #3829e0;
+.cancel-order:hover,
+.cancel-order:hover a {
+  color: #3829e0;
 }
 
 /* Proceed to Payment hover */
